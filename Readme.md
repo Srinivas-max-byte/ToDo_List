@@ -3,7 +3,6 @@ To-Do List Application
 
 Functionalities:
 -----------------------------------------------------------------------
-$$
 1. Adding Tasks.
 2. Deleting Tasks.
 3. Toggle Tasks(Check to Unchecked).
@@ -14,4 +13,3 @@ $$
 8. Animations to add new tasks icon while typing.
 9. Animation to delete task while hover.
 10. Change shade of text when clicked.
-$$
