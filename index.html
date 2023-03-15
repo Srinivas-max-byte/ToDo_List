@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ToDo List Project</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <!-- Main body -->
+    <div id="app">
+      <div id="ToDoHead">
+        <!-- Heading of UI -->
+        <i class="fa-solid fa-list-check">  ToDo List App</i>
+        <!-- Div for entering the text inside text box.-->
+        <div id="heading">
+          <i class="fa-regular fa-clipboard"></i>
+          <input type="text" id="newTask" placeholder="Click to add your task">
+          <div class="circlePlus" id="circle-plus"><i class="fa-solid fa-circle-plus" id="plusIcon"></i></div>
+        </div>
+        <!-- Options below Text Box -->
+        <div id="headOptions">
+          <span class="complete-tasks"><i class="fa-solid fa-check-double"></i> Complete all tasks</span>
+          <span class="clear-completed">Clear completed</span>
+        </div>
+      </div>
+      <!-- Div for adding tasks list -->
+      <div id="tasks">
+        <ul id="list">
+        </ul>
+      </div>
+      <!-- Div with footer options -->
+      <div id="footer">
+        <div id="taskInformation">
+          <b><span id="tasks-counter"></span></b>
+          <span> tasks left</span>
+        </div>
+        <div id="footerOptions">
+          <span class="all-select">All</span>
+          <span class="incomplete-select">Incomplete</span>
+          <span class="complete-select">Completed</span>
+        </div>
+      </div>
+    </div>
+    <!-- Font awesome Icon CDN script -->
+    <script src="https://kit.fontawesome.com/ed63e6d666.js" crossorigin="anonymous"></script>
+    <!-- External Js File -->
+    <script src="script.js"></script>
+    <!-- Invloking the function stored inside ToDoListApp object -->
+    <script type="text/javascript">
+      ToDoListApp.initialize();
+    </script>
+  </body>
+</html>

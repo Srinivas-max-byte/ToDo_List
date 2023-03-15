@@ -1,0 +1,198 @@
+::-webkit-scrollbar {
+    width: 4px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+    background: rgb(235, 227, 212);
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 15px;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+    }
+
+body {
+    font-family: sans-serif;
+}
+
+#title{
+    margin: 10px;
+    align-items: center;
+}
+/* formatting of whole app div */
+#app {
+    padding: 10px;
+    margin: 0;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 60vw;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgb(235, 227, 212);
+}
+/* Formatting of header */
+#ToDoHead{
+    border-bottom: 1px solid grey;
+}
+
+#heading{
+    background-color: rgb(245, 242, 238);
+    border-radius: 5px;
+    border: 0.5px solid black;
+    width: 100%;
+    height: 1cm;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/* Button using div to add new task to list --> formatting */
+#circle-plus{
+    visibility: hidden;
+    cursor: pointer;
+}
+/* formatting of option below heading */
+#headOptions{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+    color: dimgray;
+}
+
+#headOptions span{
+    cursor: pointer;
+}
+/* For avoiding the extra outline in these elements*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+/* formatting for new task div space */
+#newTask{
+    border: none;
+    font-size: large;
+    height: 93%;
+    width: 80%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    background-color: rgb(245, 242, 238);
+}
+/* formatting for each task inside the to do list */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: inherit;
+    align-items: center;
+    border-radius: 10px;
+}
+ul li:hover {
+    background: #cbc5ae;
+}
+/* Checkbox formatting */
+#list input {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+}
+/* Label for task text formatting. */
+#list label {
+    position: relative;
+    cursor: pointer;
+}
+/* To style the input type element before each task item text(label)*/
+#list label:before {
+    content: '';
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 2px solid #000000;
+    border-radius: 50%;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 10px;
+}
+/* Selecting the sibling of "input" for styling when task is checked */
+#list input:checked + label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 9px;
+    width: 6px;
+    height: 14px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+#list input:checked + label:before {
+    background: #0079bf;
+} 
+#list input:checked + label {
+    text-decoration: line-through;
+}
+#delete {
+    height: 20px;
+    padding: 5px 0px;
+    border-radius: 3px;
+}
+#delete:hover {
+    cursor: pointer;
+}
+
+#tasks{
+    width: 100%;
+    border-bottom: 1px solid grey;
+    max-height: 12cm;
+    overflow-y: scroll;
+}
+
+#footer{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+    color: dimgray;
+}
+#footer span{
+    cursor: pointer;
+}
+
+#footerOptions{
+    display: flex;
+}
+
+#footerOptions span{
+    margin-left: 5px;
+}
+
+#tasks-counter{
+    color: #535252;
+}
+
+
+
+  
